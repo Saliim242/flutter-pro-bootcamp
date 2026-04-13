@@ -116,6 +116,9 @@ By the end of this course, students will be able to:
 - **Firebase (Backend Services)**  
   https://firebase.google.com/
 
+- **Free api test**
+  https://fakeapi.platzi.com/en/about/introduction/
+
 ---
 
 ## 💡 Learning Advice
