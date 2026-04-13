@@ -7,7 +7,7 @@
 - **Course Title:** Flutter Mobile App Development for Real-World Applications  
 - **Course Code:** FMD-401  
 - **Level:** Final Year (Undergraduate)  
-- **Duration:** 4-5 Weeks (1 Session per Week)  
+- **Duration:** 7 Weeks (1 Session per Week)  
   
 
 ---
