@@ -1,57 +1,55 @@
-
-# 🎓 Flutter Mobile App Development for Real-World Applications
+````md id="week2-readme-final"
+# 🎓 Week 2 – Navigation, Forms & Authentication Flow  
+## Flutter Mobile App Development (Industry-Oriented)
 
 <p align="center">
-  <b>Final Year Industry-Oriented Flutter Course</b><br>
-  Learn how modern mobile applications are designed, developed, and deployed using Flutter.
+  <b>From Static UI to Interactive Mobile Applications</b><br>
+  Learn how real-world apps move between screens, collect user data, and validate input professionally.
 </p>
 
 ---
 
-# 📘 Course Information
+# 📘 Week Information
 
 | Item | Details |
 |------|---------|
-| **Course Title** | Flutter Mobile App Development for Real-World Applications |
-| **Course Code** | FMD-401 |
+| **Week** | 2 |
+| **Session Title** | Navigation, Forms & Authentication Flow |
+| **Duration** | 2.5 Hours |
 | **Level** | Final Year (Undergraduate) |
-| **Duration** | 7 Weeks |
-| **Sessions** | 1 Session Per Week |
-| **Session Time** | 2.5 Hours |
-| **Teaching Style** | Theory + Practical + Real Project |
+| **Focus** | Multi-Screen Interactive Applications |
+| **Teaching Style** | Theory + Live Coding + Practical |
 
 ---
 
-# 📖 Course Description
+# 📖 Week Description
 
-This course is designed for final-year university students and focuses on bridging the gap between academic knowledge and real-world mobile application development.
+This week transitions students from static user interfaces into interactive mobile applications.
 
-Students will learn how professional mobile applications are built using Flutter, including:
+Students will learn how professional mobile applications:
 
-- Responsive UI Design  
-- Navigation Systems  
-- State Management  
-- API Integration  
-- Authentication Systems  
-- Clean Architecture  
-- Real-World Project Development  
+- Navigate between multiple screens  
+- Collect user data through structured forms  
+- Validate user input before submission  
+- Build Login and Registration systems  
+- Organize screens professionally  
+- Improve user experience using clean flows  
 
-The course follows a hands-on learning model where students progressively build a production-style Flutter application.
+This session introduces core interaction concepts used in production Flutter applications.
 
 ---
 
-# 🎯 Course Objectives
+# 🎯 Week Objectives
 
-By completing this course, students will:
+By the end of this session, students will be able to:
 
-- Understand real-world mobile app development workflow  
-- Build professional Flutter user interfaces  
-- Implement navigation and routing systems  
-- Integrate backend APIs into mobile apps  
-- Apply scalable state management patterns  
-- Structure maintainable Flutter projects  
-- Build deployable production-ready applications  
-- Prepare for internships, jobs, and freelance opportunities  
+- Understand Flutter navigation systems  
+- Build screen-to-screen user flows  
+- Implement professional forms  
+- Validate input correctly  
+- Create Login and Registration modules  
+- Structure routes cleanly  
+- Improve application usability  
 
 ---
 
@@ -59,14 +57,14 @@ By completing this course, students will:
 
 Students will be able to:
 
-1. Build complete Flutter applications  
-2. Design clean and responsive UI systems  
-3. Manage app state professionally  
-4. Connect apps with REST APIs  
-5. Implement login and authentication flows  
-6. Structure scalable Flutter projects  
-7. Debug and optimize applications  
-8. Deploy APK/AAB builds professionally  
+1. Use `Navigator.push()` and `Navigator.pop()`  
+2. Implement Named Routes professionally  
+3. Build Login → Register → Home flows  
+4. Use `Form` and `TextFormField` widgets  
+5. Apply email and password validation  
+6. Use `TextEditingController` effectively  
+7. Organize screens using clean architecture  
+8. Build user-friendly authentication interfaces  
 
 ---
 
@@ -77,155 +75,353 @@ Students will be able to:
 | Framework | Flutter |
 | Language | Dart |
 | IDE | VS Code / Android Studio |
-| State Management | Provider |
-| Backend Communication | REST API |
-| Package Manager | Pub.dev |
-| Database / Backend | Firebase (Optional) |
-| Version Control | Git & GitHub |
+| UI Components | Material Design |
+| Navigation | Navigator API |
+| Validation | Form System |
+| Architecture | Clean Folder Structure |
 
 ---
 
-# 📅 Course Curriculum Overview
-
-| Week | Topics |
-|------|-------|
-| Week 1 | Flutter Foundations & UI Development |
-| Week 2 | Navigation, Forms & Authentication Flow |
-| Week 3 | State Management & Clean Architecture |
-| Week 4 | REST API Integration & JSON Handling |
-| Week 5 | Real-World Features (Storage, Location, Permissions) |
-| Week 6 | Project Development & Optimization |
-| Week 7 | Deployment, Final Project & Presentation |
+# 📚 Week Topics & Modules
 
 ---
 
-# 📚 Week 1 – Flutter Foundations & UI Development
+# Module 1: Navigation Systems in Flutter
 
-## Topics Covered
+## Theory
 
-### Module 1: Mobile Development in Industry
+Navigation is the process of moving users between screens inside an application.
 
-- How real-world apps are built  
-- Frontend vs Backend roles  
-- Mobile architecture overview  
-
-### Module 2: Introduction to Flutter
-
-- What is Flutter  
-- Why companies use Flutter  
-- Dart basics  
-- Widget-based UI system  
-
-### Module 3: Environment Setup
-
-- Install Flutter SDK  
-- Setup Android Studio / VS Code  
-- Run first Flutter app  
-
-### Module 4: UI Foundations
-
-- Scaffold  
-- AppBar  
-- Row / Column  
-- Container  
-- Stateless vs Stateful widgets  
-
-### Practical Task
-
-Build a professional Login UI screen.
-
----
-
-# 📚 Week 2 – Navigation, Forms & Authentication Flow
-
-## Topics Covered
-
-### Module 1: Navigation Systems
-
-- Navigator.push()  
-- Navigator.pop()  
-- Named Routes  
-- Navigation stack  
-
-### Module 2: Route Architecture
-
-- Clean route structure  
-- Route naming strategy  
-
-### Module 3: Forms & Input
-
-- Form widget  
-- TextFormField  
-- TextEditingController  
-
-### Module 4: Validation
-
-- Required fields  
-- Email validation  
-- Password rules  
-- Confirm password match  
-
-### Module 5: Authentication UI Flow
+### Examples:
 
 ```text
-Login → Register → Home
+Login → Home
+Home → Profile
+Profile → Settings
+````
 
-Practical Task
+### Why It Matters
 
-Build Login + Register + Home flow.
+Without navigation:
 
-📝 Week 2 Assignment
-🎯 Authentication Module Project
+* No user journey
+* Poor usability
+* No app structure
 
-Students must build:
+### Flutter Navigation Methods
 
-Screens
+## Direct Navigation
+
+```dart id="2j9jgr"
+Navigator.push(
+ context,
+ MaterialPageRoute(
+   builder: (_) => HomeScreen(),
+ ),
+);
+```
+
+## Go Back
+
+```dart id="dyhl0t"
+Navigator.pop(context);
+```
+
+---
+
+# Module 2: Named Routes (Professional Approach)
+
+## Why Named Routes?
+
+Large applications need organized route management.
+
+### Example Routes
+
+```text id="f7dwri"
+/login
+/register
+/home
+/profile
+/settings
+```
+
+### Benefits
+
+* Cleaner code
+* Easier maintenance
+* Better scalability
+
+---
+
+# Module 3: Forms & Input Systems
+
+## Professional Input Handling
+
+Flutter forms help collect structured user data.
+
+### Main Widgets
+
+* `Form`
+* `TextFormField`
+* `GlobalKey<FormState>`
+
+### Input Examples
+
+* Email
+* Password
+* Full Name
+* Phone Number
+
+---
+
+# Module 4: TextEditingController
+
+Used to control and read text input.
+
+```dart id="i06x8f"
+final emailController = TextEditingController();
+```
+
+### Benefits
+
+* Read user data
+* Clear fields
+* Update text programmatically
+
+---
+
+# Module 5: Validation Engineering
+
+## Why Validation Matters
+
+Validation protects:
+
+* User experience
+* Data quality
+* Security
+* Backend systems
+
+---
+
+## Validation Examples
+
+### Required Field
+
+```dart id="ncnp3z"
+if(value!.isEmpty){
+ return 'Required field';
+}
+```
+
+### Email Validation
+
+```dart id="h9jh8x"
+if(!value.contains('@')){
+ return 'Invalid email';
+}
+```
+
+### Password Validation
+
+* Minimum 6 characters
+* Strong password preferred
+
+---
+
+# Module 6: Authentication Flow Design
+
+## Real-World Flow
+
+```text id="q1kvdx"
 Login Screen
-Register Screen
+   ↓
+Validate Input
+   ↓
+Success
+   ↓
 Home Screen
-Functional Requirements
-Navigation between screens
-Input validation
-Clean UI design
-Bonus Features
-Password show/hide
-Snackbar messages
-Loading indicator
-Custom widgets
+```
+
+### Register Flow
+
+```text id="4u1wb7"
+Login
+ ↓
+Create Account
+ ↓
+Register
+ ↓
+Back to Login
+```
+
+---
+
+# Module 7: Clean Folder Structure
+
+```text id="9n2y0r"
+lib/
+ ├── screens/
+ │   ├── login_screen.dart
+ │   ├── register_screen.dart
+ │   └── home_screen.dart
+ │
+ ├── widgets/
+ │   ├── custom_text_field.dart
+ │   └── primary_button.dart
+ │
+ ├── routes/
+ └── main.dart
+```
+
+### Why It Matters
+
+Professional developers organize projects early.
+
+---
+
+# 💻 In-Class Practical Session
+
+Students will build:
+
+✅ Login Screen
+✅ Register Screen
+✅ Home Screen
+✅ Navigation Flow
+✅ Form Validation
+✅ Clean Layout
+
+---
+
+# 📝 Assignment – Authentication Module
+
+## 🎯 Student Task
+
+Build a professional Flutter Authentication App.
+
+---
+
+## Required Screens
+
+### 1. Login Screen
+
+Must include:
+
+* Email field
+* Password field
+* Login button
+* Register navigation link
+
+---
+
+### 2. Register Screen
+
+Must include:
+
+* Full Name
+* Email
+* Password
+* Confirm Password
+* Register button
+
+---
+
+### 3. Home Screen
+
+Must display:
+
+* Welcome text
+* Logout button (optional)
+
+---
+
+# 📌 Functional Requirements
+
+## Navigation
+
+```text id="cycrl2"
+Login ↔ Register
+Login → Home
+```
+
+## Validation Rules
+
+* All fields required
+* Valid email format
+* Password minimum 6 characters
+* Passwords must match
+
+---
 
 
-📚 Essential Learning Resources
-Official Flutter Documentation
 
-https://docs.flutter.dev/
+# ⚠️ Common Mistakes to Avoid
 
-Dart Language Docs
+* Using `TextField` instead of `TextFormField`
+* No validation
+* Messy navigation code
+* Hardcoded values
+* No spacing / poor UI
+* No file organization
 
-https://dart.dev/guides
+---
 
-Pub.dev Packages
+# 📚 Recommended Resources
 
-https://pub.dev/
+## Flutter Official Docs
 
-Firebase
+[https://docs.flutter.dev/](https://docs.flutter.dev/)
 
-https://firebase.google.com/
+## Navigation Guide
 
-Flutter Navigation Guide
+[https://docs.flutter.dev/cookbook/navigation/navigation-basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 
-https://docs.flutter.dev/cookbook/navigation/navigation-basics
+## Forms Validation
 
-Flutter Forms Guide
+[https://docs.flutter.dev/cookbook/forms/validation](https://docs.flutter.dev/cookbook/forms/validation)
 
-https://docs.flutter.dev/cookbook/forms/validation
+## Pub.dev Packages
 
-💡 Student Success Guide
+[https://pub.dev/](https://pub.dev/)
 
-To succeed in this course:
+## Firebase
 
-Practice coding every day
-Read official documentation
-Build small projects independently
-Debug your own errors
-Use GitHub regularly
-Ask questions during sessions
+[https://firebase.google.com/](https://firebase.google.com/)
+
+---
+
+# 💡 Student Success Tips
+
+* Practice daily
+* Build while learning
+* Understand each widget
+* Use documentation
+* Ask questions
+* Organize code early
+
+---
+
+# 🚀 Next Week Preview
+
+## Week 3 – State Management & Architecture
+
+Students will learn:
+
+* What is State
+* Why apps become messy
+* Scalable Flutter Architecture
+
+---
+
+# 👨‍🏫 Instructor Message
+
+> Beautiful UI attracts users.
+> Functional flow keeps users.
+
+---
+
+# ⭐ Mindset for Developers
+
+> Build. Break. Debug. Improve. Repeat.
+
+```
+```
