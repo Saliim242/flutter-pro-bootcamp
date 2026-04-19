@@ -1,55 +1,63 @@
-````md id="week2-readme-final"
-# 🎓 Week 2 – Navigation, Forms & Authentication Flow  
-## Flutter Mobile App Development (Industry-Oriented)
+# 🎓 Week 2 – Navigation, Forms & Authentication Flow
+
+### Flutter Mobile App Development (Industry-Oriented)
 
 <p align="center">
-  <b>From Static UI to Interactive Mobile Applications</b><br>
-  Learn how real-world apps move between screens, collect user data, and validate input professionally.
+  <img src="https://img.shields.io/badge/Flutter-Mobile%20Development-02569B?logo=flutter&logoColor=white">
+  <img src="https://img.shields.io/badge/Dart-Programming-0175C2?logo=dart&logoColor=white">
+  <img src="https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-success">
+  <img src="https://img.shields.io/badge/Mode-Theory%20%2B%20Practical-orange">
+</p>
+
+<p align="center">
+<b>From Static UI to Interactive Mobile Applications</b><br>
+Learn how modern apps move between screens, collect data, validate input, and manage authentication professionally.
 </p>
 
 ---
 
 # 📘 Week Information
 
-| Item | Details |
-|------|---------|
-| **Week** | 2 |
-| **Session Title** | Navigation, Forms & Authentication Flow |
-| **Duration** | 2.5 Hours |
-| **Level** | Final Year (Undergraduate) |
-| **Focus** | Multi-Screen Interactive Applications |
-| **Teaching Style** | Theory + Live Coding + Practical |
+| Item             | Details                                 |
+| ---------------- | --------------------------------------- |
+| Week             | 2                                       |
+| Session Title    | Navigation, Forms & Authentication Flow |
+| Duration         | 2.5 Hours                               |
+| Level            | Final Year / Undergraduate              |
+| Mode             | Theory + Live Coding + Practical        |
+| Technology Stack | Flutter + Dart                          |
+| Focus Area       | Multi-Screen Interactive Applications   |
 
 ---
 
-# 📖 Week Description
+# 📖 Module Overview
 
-This week transitions students from static user interfaces into interactive mobile applications.
+This week introduces students to the transition from static interfaces into real interactive mobile applications.
 
-Students will learn how professional mobile applications:
+Students will learn how professional Flutter apps:
 
-- Navigate between multiple screens  
-- Collect user data through structured forms  
-- Validate user input before submission  
-- Build Login and Registration systems  
-- Organize screens professionally  
-- Improve user experience using clean flows  
+* Navigate between multiple screens
+* Build structured forms for data collection
+* Validate user input correctly
+* Implement login and registration flows
+* Improve user experience through clean navigation
+* Organize projects using scalable structure
 
-This session introduces core interaction concepts used in production Flutter applications.
+These concepts are foundational for production-level mobile development.
 
 ---
 
-# 🎯 Week Objectives
+# 🎯 Learning Objectives
 
-By the end of this session, students will be able to:
+By the end of this session, students should be able to:
 
-- Understand Flutter navigation systems  
-- Build screen-to-screen user flows  
-- Implement professional forms  
-- Validate input correctly  
-- Create Login and Registration modules  
-- Structure routes cleanly  
-- Improve application usability  
+* Understand Flutter navigation systems
+* Move users between screens efficiently
+* Build professional forms using Flutter widgets
+* Apply validation rules to user input
+* Create authentication flows
+* Organize project files cleanly
+* Improve usability and user experience
 
 ---
 
@@ -57,62 +65,53 @@ By the end of this session, students will be able to:
 
 Students will be able to:
 
-1. Use `Navigator.push()` and `Navigator.pop()`  
-2. Implement Named Routes professionally  
-3. Build Login → Register → Home flows  
-4. Use `Form` and `TextFormField` widgets  
-5. Apply email and password validation  
-6. Use `TextEditingController` effectively  
-7. Organize screens using clean architecture  
-8. Build user-friendly authentication interfaces  
+1. Use Navigator.push() and Navigator.pop() correctly
+2. Implement Named Routes professionally
+3. Build Login → Register → Home flows
+4. Use Form and TextFormField widgets
+5. Validate email and password inputs
+6. Manage input fields with controllers
+7. Apply clean project architecture
+8. Build user-friendly authentication screens
 
 ---
 
 # 🛠️ Technologies Used
 
-| Category | Tools |
-|---------|------|
-| Framework | Flutter |
-| Language | Dart |
-| IDE | VS Code / Android Studio |
-| UI Components | Material Design |
-| Navigation | Navigator API |
-| Validation | Form System |
-| Architecture | Clean Folder Structure |
+| Category     | Tool                     |
+| ------------ | ------------------------ |
+| Framework    | Flutter                  |
+| Language     | Dart                     |
+| IDE          | VS Code / Android Studio |
+| UI Library   | Material Design          |
+| Navigation   | Navigator API            |
+| Forms        | Flutter Form Widgets     |
+| Validation   | Built-in Validators      |
+| Architecture | Feature-Based Structure  |
 
 ---
 
-# 📚 Week Topics & Modules
+# 🗂️ Weekly Modules
 
----
+# 📍 Module 1: Navigation Systems
 
-# Module 1: Navigation Systems in Flutter
-
-## Theory
+## Concept
 
 Navigation is the process of moving users between screens inside an application.
 
-### Examples:
+## Example Flow
 
-```text
-Login → Home
-Home → Profile
-Profile → Settings
-````
+Login → Home → Profile → Settings
 
-### Why It Matters
-
-Without navigation:
+## Why It Matters
 
 * No user journey
 * Poor usability
-* No app structure
+* Confusing app flow
 
-### Flutter Navigation Methods
+## Basic Navigation Example
 
-## Direct Navigation
-
-```dart id="2j9jgr"
+```dart
 Navigator.push(
  context,
  MaterialPageRoute(
@@ -123,49 +122,48 @@ Navigator.push(
 
 ## Go Back
 
-```dart id="dyhl0t"
+```dart
 Navigator.pop(context);
 ```
 
 ---
 
-# Module 2: Named Routes (Professional Approach)
+# 📍 Module 2: Named Routes (Professional Navigation)
 
 ## Why Named Routes?
 
-Large applications need organized route management.
+Large apps require centralized route management.
 
-### Example Routes
+## Example Routes
 
-```text id="f7dwri"
 /login
 /register
 /home
 /profile
 /settings
-```
 
-### Benefits
+## Benefits
 
 * Cleaner code
 * Easier maintenance
 * Better scalability
+* Faster development
 
 ---
 
-# Module 3: Forms & Input Systems
+# 📍 Module 3: Forms Engineering
 
-## Professional Input Handling
+## Concept
 
-Flutter forms help collect structured user data.
+Forms are systems used to collect structured user data.
 
-### Main Widgets
+## Main Widgets
 
-* `Form`
-* `TextFormField`
-* `GlobalKey<FormState>`
+* Form
+* TextFormField
+* GlobalKey<FormState>
 
-### Input Examples
+## Common Inputs
 
 * Email
 * Password
@@ -174,23 +172,23 @@ Flutter forms help collect structured user data.
 
 ---
 
-# Module 4: TextEditingController
+# 📍 Module 4: TextEditingController
 
-Used to control and read text input.
+Used to manage and read input fields.
 
-```dart id="i06x8f"
+```dart
 final emailController = TextEditingController();
 ```
 
-### Benefits
+## Benefits
 
-* Read user data
+* Read entered text
 * Clear fields
-* Update text programmatically
+* Update values dynamically
 
 ---
 
-# Module 5: Validation Engineering
+# 📍 Module 5: Validation Engineering
 
 ## Why Validation Matters
 
@@ -201,64 +199,60 @@ Validation protects:
 * Security
 * Backend systems
 
----
+## Required Field Example
 
-## Validation Examples
-
-### Required Field
-
-```dart id="ncnp3z"
+```dart
 if(value!.isEmpty){
  return 'Required field';
 }
 ```
 
-### Email Validation
+## Email Validation Example
 
-```dart id="h9jh8x"
+```dart
 if(!value.contains('@')){
  return 'Invalid email';
 }
 ```
 
-### Password Validation
+## Password Rules
 
 * Minimum 6 characters
-* Strong password preferred
+* Strong password recommended
 
 ---
 
-# Module 6: Authentication Flow Design
+# 📍 Module 6: Authentication Flow Design
 
-## Real-World Flow
+## Login Flow
 
-```text id="q1kvdx"
 Login Screen
-   ↓
+↓
 Validate Input
-   ↓
+↓
 Success
-   ↓
+↓
 Home Screen
-```
 
-### Register Flow
+## Register Flow
 
-```text id="4u1wb7"
 Login
- ↓
+↓
 Create Account
- ↓
+↓
 Register
- ↓
+↓
 Back to Login
-```
+
+## Why Important
+
+Authentication protects user access and controls sessions.
 
 ---
 
-# Module 7: Clean Folder Structure
+# 📍 Module 7: Clean Project Structure
 
-```text id="9n2y0r"
+```text
 lib/
  ├── screens/
  │   ├── login_screen.dart
@@ -273,9 +267,12 @@ lib/
  └── main.dart
 ```
 
-### Why It Matters
+## Benefits
 
-Professional developers organize projects early.
+* Easier teamwork
+* Cleaner codebase
+* Better scalability
+* Faster debugging
 
 ---
 
@@ -283,39 +280,31 @@ Professional developers organize projects early.
 
 Students will build:
 
-✅ Login Screen
-✅ Register Screen
-✅ Home Screen
-✅ Navigation Flow
-✅ Form Validation
-✅ Clean Layout
+* Login Screen
+* Register Screen
+* Home Screen
+* Navigation Flow
+* Validation Rules
+* Clean UI Layout
 
 ---
 
-# 📝 Assignment – Authentication Module
+# 📝 Assignment – Authentication App
 
-## 🎯 Student Task
+## Student Task
 
-Build a professional Flutter Authentication App.
-
----
+Create a professional Flutter Authentication Application.
 
 ## Required Screens
 
-### 1. Login Screen
-
-Must include:
+### Login Screen
 
 * Email field
 * Password field
 * Login button
-* Register navigation link
+* Register link
 
----
-
-### 2. Register Screen
-
-Must include:
+### Register Screen
 
 * Full Name
 * Email
@@ -323,11 +312,7 @@ Must include:
 * Confirm Password
 * Register button
 
----
-
-### 3. Home Screen
-
-Must display:
+### Home Screen
 
 * Welcome text
 * Logout button (optional)
@@ -336,12 +321,10 @@ Must display:
 
 # 📌 Functional Requirements
 
-## Navigation
+## Navigation Flow
 
-```text id="cycrl2"
 Login ↔ Register
 Login → Home
-```
 
 ## Validation Rules
 
@@ -352,51 +335,33 @@ Login → Home
 
 ---
 
-
-
 # ⚠️ Common Mistakes to Avoid
 
-* Using `TextField` instead of `TextFormField`
-* No validation
-* Messy navigation code
+* Using TextField instead of TextFormField
+* No validation rules
+* Messy navigation logic
 * Hardcoded values
-* No spacing / poor UI
-* No file organization
+* Poor spacing and UI design
+* Unorganized folders
 
 ---
 
 # 📚 Recommended Resources
 
-## Flutter Official Docs
+* Flutter Official Documentation
+  [https://docs.flutter.dev/](https://docs.flutter.dev/)
 
-[https://docs.flutter.dev/](https://docs.flutter.dev/)
+* Navigation Basics
+  [https://docs.flutter.dev/cookbook/navigation/navigation-basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 
-## Navigation Guide
+* Forms Validation Guide
+  [https://docs.flutter.dev/cookbook/forms/validation](https://docs.flutter.dev/cookbook/forms/validation)
 
-[https://docs.flutter.dev/cookbook/navigation/navigation-basics](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
+* Pub.dev Packages
+  [https://pub.dev/](https://pub.dev/)
 
-## Forms Validation
-
-[https://docs.flutter.dev/cookbook/forms/validation](https://docs.flutter.dev/cookbook/forms/validation)
-
-## Pub.dev Packages
-
-[https://pub.dev/](https://pub.dev/)
-
-## Firebase
-
-[https://firebase.google.com/](https://firebase.google.com/)
-
----
-
-# 💡 Student Success Tips
-
-* Practice daily
-* Build while learning
-* Understand each widget
-* Use documentation
-* Ask questions
-* Organize code early
+* Firebase
+  [https://firebase.google.com/](https://firebase.google.com/)
 
 ---
 
@@ -408,20 +373,21 @@ Students will learn:
 
 * What is State
 * Why apps become messy
-* Scalable Flutter Architecture
+* Clean scalable architecture
+* Provider / Bloc / Riverpod basics / Getx
 
 ---
 
 # 👨‍🏫 Instructor Message
 
-> Beautiful UI attracts users.
-> Functional flow keeps users.
+Beautiful UI attracts users.
+Functional flow keeps users.
 
 ---
 
-# ⭐ Mindset for Developers
+# ⭐ Developer Mindset
 
-> Build. Break. Debug. Improve. Repeat.
+Build. Break. Debug. Improve. Repeat.
 
-```
-```
+---
+
