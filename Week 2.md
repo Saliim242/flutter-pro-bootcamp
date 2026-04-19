@@ -17,7 +17,7 @@ Learn how modern apps move between screens, collect data, validate input, and ma
 ---
 
 <img width="1919" height="994" alt="web" src="https://github.com/user-attachments/assets/213eb8e8-c4f6-401b-b4bc-898107ffebc7" />
-<img width="1344" height="2992" alt="Screenshot_1776594275" src="https://github.com/user-attachments/assets/67f92cbe-dfb3-4caf-92bc-37ab78a7868e" />
+ 
 
 
 # 📘 Week Information
